@@ -4,6 +4,8 @@ const aboutBtn = document.getElementById('aboutBtn')
 const btnDown = document.getElementById('btnDown')
 const about = document.getElementById('about')
 const hero = document.getElementById('hero')
+const popUp = document.getElementById('popUp')
+const pop = document.getElementById('pop')
 
 
 menuBtn.addEventListener('click', () => {
@@ -28,4 +30,14 @@ btnDown.addEventListener('click', () => {
   about.classList.toggle('-z-20')
 })
 
+popUp.addEventListener('click', () => {
+  hero.classList.toggle('upDown')
+  about.classList.toggle('downUp')
+  about.classList.toggle('-z-20')
+})
 
+pop.addEventListener('click', () => {
+  hero.classList.toggle('upDown')
+  about.classList.toggle('downUp')
+  about.classList.toggle('-z-20')
+})
