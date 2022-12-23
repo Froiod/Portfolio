@@ -20,24 +20,19 @@ menuItem.addEventListener('click', () => {
 })
 
 aboutBtn.addEventListener('click', () => {
-  hero.classList.toggle('upDown')
-  about.classList.toggle('downUp')
-  about.classList.toggle('-z-20')
+  about.classList.replace('hidden', 'flex')
+  about.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+  aboutBtn.classList.add('hidden')
 })
-btnDown.addEventListener('click', () => {
-  hero.classList.toggle('upDown')
-  about.classList.toggle('downUp')
-  about.classList.toggle('-z-20')
-})
+
 
 popUp.addEventListener('click', () => {
-  hero.classList.toggle('upDown')
-  about.classList.toggle('downUp')
-  about.classList.toggle('-z-20')
+  about.classList.replace('hidden', 'flex')
+  about.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+  aboutBtn.classList.add('hidden')
 })
-
 pop.addEventListener('click', () => {
-  hero.classList.toggle('upDown')
-  about.classList.toggle('downUp')
-  about.classList.toggle('-z-20')
+  about.classList.replace('hidden', 'flex')
+  about.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+  aboutBtn.classList.add('hidden')
 })
